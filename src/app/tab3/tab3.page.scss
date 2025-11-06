@@ -1,0 +1,68 @@
+// Grid con más espaciado
+ion-grid {
+  --ion-grid-padding: 0;
+  --ion-grid-column-padding: 12px; // Más espacio entre columnas
+}
+
+ion-row {
+  margin: 0;
+  padding: 0;
+}
+
+ion-col {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px; // Más espacio entre filas
+}
+
+// Título de la sección
+h3 {
+  color: var(--ion-text-color);
+  margin: 0 0 16px 0; // Más espacio debajo del título
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+// Movie card personalizada
+.movie-card {
+  margin: 0;
+  padding: 0;
+  background: var(--ion-card-background, white);
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15); // Sombra más pronunciada
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  .poster-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    display: block;
+  }
+
+  .movie-info {
+    padding: 16px 12px; // Más padding interno
+    text-align: center;
+
+    .movie-title {
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.3;
+      color: var(--ion-text-color);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+swiper-slide .card-wrapper {
+  // Le damos un ancho que se ajuste a la imagen dentro del swiper-slide
+  width: 95%;
+}
+
+ion-card {
+  margin: 0;
+  box-shadow: none;
+  background: transparent;
+  width: 100%; /* Ahora 100% del card-wrapper (95% del swiper-slide) */
+  height: auto;
+  display: block;
+
+  img.poster {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+}

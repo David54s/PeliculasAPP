@@ -1,0 +1,56 @@
+// Ion-card personalizado con temas
+.custom-card {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+
+  --ion-card-background: var(--ion-item-background); // Adaptativo
+  --ion-card-padding: 0;
+  --ion-card-margin: 0;
+
+  .poster-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    display: block;
+  }
+
+  .custom-header {
+    padding: 8px 8px 0 8px;
+    text-align: center; // Centrado
+
+    .custom-subtitle {
+      font-size: 0.8rem;
+      margin: 0;
+      padding: 0;
+      color: var(--ion-color-medium);
+    }
+  }
+
+  .custom-content {
+    padding: 4px 8px 8px 8px;
+    text-align: center;
+
+    .movie-title {
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--ion-text-color);
+    }
+  }
+}
+
+// Grid settings
+ion-grid {
+  --ion-grid-padding: 0;
+  --ion-grid-column-padding: 8px;
+}
+
+ion-col {
+  margin-bottom: 16px;
+}

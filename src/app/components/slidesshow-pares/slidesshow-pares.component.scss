@@ -12,3 +12,71 @@
 
 
 
+swiper-container.slide-full {
+  padding: 0 16px;
+}
+
+swiper-slide {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-row {
+  padding: 0;
+  margin: 0;
+  --ion-grid-padding: 0;
+  --ion-grid-column-padding: 0;
+}
+
+.custom-col {
+  padding: 0;
+  margin: 0;
+  --ion-grid-column-padding: 0;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Ion-card corregido
+ion-card {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  background: transparent;
+  width: 100%;
+  height: auto;
+  display: block;
+
+  --ion-card-background: transparent;
+  --ion-card-padding: 0;
+  --ion-card-margin: 0;
+
+  img.poster {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+}
+
+.slide-mas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .btn-mas {
+    margin: 0;
+    --border-radius: 8px;
+    --padding-start: 0;
+    --padding-end: 0;
+    height: 100%;
+
+    ion-icon {
+      font-size: 24px;
+    }
+  }
+}

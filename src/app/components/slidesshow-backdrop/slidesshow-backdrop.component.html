@@ -1,12 +1,7 @@
-<swiper-container  pager="true" class="slide-full" slides-per-view="1.1" free-mode="true">
-
-    <swiper-slide *ngFor="let pelicula of peliculas">
-
-      <ion-card (click)="verDetalle(pelicula.id)">
-
-        <img [src]="(pelicula.backdrop_path ?? '') | imagen">
-
-      </ion-card>
-    </swiper-slide>
-
-  </swiper-container>
+<swiper-container pager="true" class="slide-full" slides-per-view="1.1" free-mode="true" space-between="8">
+  <swiper-slide *ngFor="let pelicula of peliculas">
+    <ion-card (click)="verDetalle(pelicula.id)">
+      <img [src]="(pelicula.backdrop_path ?? '') | imagen">
+    </ion-card>
+  </swiper-slide>
+</swiper-container>

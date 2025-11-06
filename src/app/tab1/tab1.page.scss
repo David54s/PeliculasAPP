@@ -1,0 +1,29 @@
+ion-content {
+  --padding-top: 8px; // Reducir padding superior del contenido
+  --padding-bottom: 8px;
+}
+
+// Reducir espacio entre secciones
+app-slidesshow-backdrop,
+app-slidesshow-poster,
+app-slidesshow-pares {
+  display: block;
+  margin-bottom: 8px; // Espacio reducido entre secciones
+}
+
+// Ajustar los grids de títulos
+ion-grid {
+  margin-bottom: 4px !important; // Reducir espacio debajo del título
+
+  h3 {
+    margin: 0 0 4px 0 !important; // Reducir margen inferior del título
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+// Opcional: ajustar padding interno de los grids si es necesario
+ion-grid[fixed] {
+  --ion-grid-padding: 0;
+  --ion-grid-column-padding: 0;
+}

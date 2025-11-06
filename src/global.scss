@@ -35,3 +35,14 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+
+@import 'swiper/css';
+@import '@ionic/angular/css/ionic-swiper';
+@import 'swiper/swiper-bundle.css';
+
+
+.poster {
+  width: 110px !important;
+  height: 160px !important;
+}

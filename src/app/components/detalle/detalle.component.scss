@@ -1,0 +1,49 @@
+.poster-detalle-sobre {
+    position: relative;
+    top: -75px;
+    left: -10px;
+    margin-bottom: -75px;
+}
+
+.titulo {
+    width: 100%;
+    position: absolute;
+    color: white;
+    background-color: red;
+    padding: 5px 5px 40px 5px; /* Nota: El 40px parece ser el valor inferior para expandir el fondo */
+
+    /* Sección del Gradiente (superpuesta o como parte del fondo) */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradi */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* Firefox */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* Chrome, Safari */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* Estándar */
+    /* Filtro para IE (Internet Explorer) */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+}
+
+
+.titulo h1 {
+    position: absolute;
+    top: 28px;
+    left: 5px;
+}
+
+.card-actor {
+    height: 210px;
+    --background: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card-actor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.actor-name {
+    position: relative;
+    top: 15px;
+}
